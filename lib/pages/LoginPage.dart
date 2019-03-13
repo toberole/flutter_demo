@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/MainPage.dart';
 import 'package:flutter_app/widgets/ButtonView.dart';
 
 class LoginPage extends StatefulWidget {
@@ -93,9 +94,11 @@ class LoginPageState extends State<LoginPage> {
     String name = nameController.text.trim();
     String pwd = pwdController.text.trim();
 
-    if (!name.isEmpty && !pwd.isEmpty) {
-      print("name: " + name);
-      print("pwd: " + pwd);
-    } else {}
+    print("name: " + name);
+    print("pwd: " + pwd);
+
+    Navigator.push(ctx, new MaterialPageRoute(builder: (context) {
+      return new MainPage();
+    }));
   }
 }
