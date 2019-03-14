@@ -97,8 +97,9 @@ class LoginPageState extends State<LoginPage> {
     print("name: " + name);
     print("pwd: " + pwd);
 
+    // 类似与startActivity
     Navigator.push(ctx, new MaterialPageRoute(builder: (context) {
-      return new MainPage();
+      return new MainPage(name, pwd);
     }));
   }
 }
