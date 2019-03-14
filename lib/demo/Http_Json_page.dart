@@ -9,7 +9,7 @@ class Http_Json_Page extends StatefulWidget {
 }
 
 class _Http_Json_PageState extends State<Http_Json_Page> {
-  List datas;
+  List datas = [];
 
   @override
   void initState() {
@@ -20,8 +20,11 @@ class _Http_Json_PageState extends State<Http_Json_Page> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.white,
+    return Scaffold(
+      appBar: new AppBar(
+        title: Text("http json demo"),
+      ),
+      body: getBody(),
     );
   }
 
@@ -29,9 +32,44 @@ class _Http_Json_PageState extends State<Http_Json_Page> {
     String dataURL = Datas.users;
     http.Response response = await http.get(dataURL);
 
-    List responseJson = json.decode(response.body);
+    datas = json.decode(response.body);
+
+    setState(() {
+
+    });
 
     print("response.body = " + response.body);
-    print("responseJson[0] = " + responseJson[0]["name"]);
+    print("responseData[0] = " + datas[0]["name"]);
+  }
+
+  getBody() {
+    if (datas.length == 0) {
+      return getProgressDialog();
+    }
+
+    return getListView();
+  }
+
+  getProgressDialog() {
+    return new Center(
+      child: new CircularProgressIndicator(),
+    );
+  }
+
+  getListView() {
+    return new ListView.builder(
+      itemBuilder: (buildContext, position) {
+        return new Center(
+          child: new Column(
+            children: <Widget>[
+              Text(datas[position]["name"]),
+              new Divider(),
+              Text(datas[position]["age"].toString())
+            ],
+          ),
+        );
+      },
+      itemCount: datas.length,
+    );
   }
 }

@@ -1,3 +1,4 @@
-class Datas{
-  static String users = "https://raw.githubusercontent.com/toberole/datas/master/users.json";
+class Datas {
+  static String users =
+      "https://github.com/toberole/datas/blob/master/json/users.json?raw=true";
 }
