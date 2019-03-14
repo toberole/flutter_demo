@@ -34,9 +34,7 @@ class _Http_Json_PageState extends State<Http_Json_Page> {
 
     datas = json.decode(response.body);
 
-    setState(() {
-
-    });
+    setState(() {});
 
     print("response.body = " + response.body);
     print("responseData[0] = " + datas[0]["name"]);
@@ -59,15 +57,22 @@ class _Http_Json_PageState extends State<Http_Json_Page> {
   getListView() {
     return new ListView.builder(
       itemBuilder: (buildContext, position) {
-        return new Center(
-          child: new Column(
-            children: <Widget>[
-              Text(datas[position]["name"]),
-              new Divider(),
-              Text(datas[position]["age"].toString())
-            ],
-          ),
-        );
+        return new GestureDetector(
+            onTap: () {
+              print("click position = " + position.toString());
+            },
+            child: new Center(
+              child: new Column(
+                children: <Widget>[
+                  Text(datas[position]["name"]),
+                  Text(datas[position]["age"].toString()),
+                  new Divider(
+                    color: Colors.red,
+                    height: 5,
+                  ),
+                ],
+              ),
+            ));
       },
       itemCount: datas.length,
     );
