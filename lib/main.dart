@@ -12,8 +12,8 @@ import 'package:flutter_app/demo/Navigator_demo.dart';
 import 'package:flutter_app/demo/Padding_page_demo.dart';
 
 void main() => runApp(new MaterialApp(
-      title: "Login",
-      theme: ThemeData(primaryColor: Colors.blue),
-      //home: new Container_Page(),
-      home: new Navigator_Page(),
-    ));
+    title: "Login",
+    theme: ThemeData(primaryColor: Colors.blue),
+    //home: new Container_Page(),
+    // home: new Navigator_Page(),
+    home: new Http_Json_Page()));

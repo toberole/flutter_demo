@@ -26,6 +26,9 @@ lib目录
     flutter test
     和debug模式类似，不支持headless和桌面平台。
 
+### 命令
+    flutter emulator 查看模拟器
+
 ### 跳转下一个页面
 Navigator.push
 
