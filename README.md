@@ -1,3 +1,31 @@
+### 项目结构
+ios目录
+    包含了ios的全部代码可以直接使用xcode（需要9.0+版本）进行开发。
+
+android目录
+    包含了android的全部代码，直接使用android studio开发即可。
+
+lib目录
+    包含了两端通用的dart代码，在打包生成应用时
+    全部的dart代码会被编译为本地代码（如在android端，会被直接编译为so文件）。
+
+### 打包
+- debug
+    命令：flutter run debug
+    应用的右上角会显示slow mode字样，支持debug。
+
+- release
+    命令：flutter run --release
+    UI上面不显示模式；禁止debug，且删除了debug相关的信息；关闭全部的断言检测，减小包大小，使其达到最佳性能。
+
+- profile
+    命令：flutter run --profile
+    调试性能，不支持模拟器。
+
+- test
+    flutter test
+    和debug模式类似，不支持headless和桌面平台。
+
 ### 跳转下一个页面
 Navigator.push
 

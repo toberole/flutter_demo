@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 class MainPage extends StatelessWidget {
   String name;
   String pwd;
+
 // 构造方法的两种写法
 //  MainPage(String name, String pwd) {
 //    this.name = name;
 //    this.pwd = pwd;
 //  }
 
-  MainPage(this.name, this.pwd) {
-  }
+  MainPage(this.name, this.pwd);
 
   @override
   Widget build(BuildContext context) {

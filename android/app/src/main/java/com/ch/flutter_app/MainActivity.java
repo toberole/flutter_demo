@@ -16,8 +16,12 @@ public class MainActivity extends FlutterActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // GeneratedPluginRegistrant.registerWith(this);
+        GeneratedPluginRegistrant.registerWith(this);
 
+        flutter_call_java_init();
+    }
+
+    private void flutter_call_java_init() {
         // setMethodCallHandler在此通道上接收方法调用的回调
         new MethodChannel(getFlutterView(), CHANNEL).setMethodCallHandler(
                 new MethodChannel.MethodCallHandler() {
