@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/demo/Padding_page_demo.dart';
-import 'package:flutter_app/demo/Stack_Page_demo.dart';
+import 'package:flutter_app/demo/Container_demo.dart';
+import 'package:flutter_app/demo/FittedBox_page.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 void main() => runApp(new MaterialApp(
       title: "Login",
       theme: ThemeData(primaryColor: Colors.blue),
       // home: new LoginPage(),
-      home: new Stack_page(),
+      home: new FittedBox_page(),
     ));
 
 class STL_Widget extends StatefulWidget {

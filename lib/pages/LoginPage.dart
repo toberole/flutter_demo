@@ -19,6 +19,19 @@ class LoginPageState extends State<LoginPage> {
   var g_key = new GlobalKey<LoginPageState>();
 
   @override
+  void initState() {
+    super.initState();
+
+    print("LoginPageState#initState");
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+
+    print("LoginPageState#dispose");
+  }
+  @override
   Widget build(BuildContext context) {
     var v = new Container(
       height: 10,

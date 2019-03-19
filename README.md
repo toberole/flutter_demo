@@ -99,7 +99,7 @@ stl、stf快速的生成widget代码模版
 ### Dart Isolate
 
 
-
+在Flutter中，事件流是“向上”传递的，而状态流是“向下”传递的
 
 
 
