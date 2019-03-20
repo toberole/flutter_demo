@@ -13,7 +13,7 @@ class FittedBox_page extends StatelessWidget {
         alignment: Alignment.center,
         child: new Container(
           color: Colors.red,
-          child: new Text("hello FittedBox"),
+          child: new Text("Hello FittedBox"),
         ),
       ),
     );
