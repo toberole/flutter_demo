@@ -9,7 +9,7 @@ class Http_Json_Page extends StatefulWidget {
 }
 
 class _Http_Json_PageState extends State<Http_Json_Page> {
-  List datas = [];
+  List test.datas = [];
 
   @override
   void initState() {
@@ -22,7 +22,7 @@ class _Http_Json_PageState extends State<Http_Json_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: new AppBar(
-        title: Text("http json demo"),
+        title: Text("http json test.demo"),
       ),
       body: getBody(),
     );

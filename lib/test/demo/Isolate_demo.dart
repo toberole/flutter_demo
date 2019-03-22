@@ -10,7 +10,7 @@ class Isolate_page extends StatefulWidget {
 }
 
 class _Isolate_pageState extends State<Isolate_page> {
-  List widgets;
+  List test.widgets;
 
   @override
   void initState() {
@@ -23,7 +23,7 @@ class _Isolate_pageState extends State<Isolate_page> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: Text("Isolate demo"),
+        title: Text("Isolate test.demo"),
       ),
       body: getBody(),
     );

@@ -11,7 +11,7 @@ class Gestures_page extends StatelessWidget {
         onTapUp: _onTapUp,
         onTapCancel: _onTapCancel,
         onDoubleTap: _doubleTap,
-        child: new Text("hello demo"),
+        child: new Text("hello test.demo"),
       ),
     );
   }

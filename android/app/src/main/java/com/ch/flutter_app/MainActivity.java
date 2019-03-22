@@ -10,7 +10,7 @@ import io.flutter.plugin.common.MethodChannel;
 import io.flutter.plugins.GeneratedPluginRegistrant;
 
 public class MainActivity extends FlutterActivity {
-    private static final String CHANNEL = "flutter_call_java.flutter.io/demo";
+    private static final String CHANNEL = "flutter_call_java.flutter.io/test.demo";
     private static final String METHOD_NAME = "toast_msg";
 
     @Override

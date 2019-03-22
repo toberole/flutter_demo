@@ -9,7 +9,7 @@ class Flutter_Call_java extends StatefulWidget {
 
 class _Flutter_Call_javaState extends State<Flutter_Call_java> {
   static const platform =
-      const MethodChannel("flutter_call_java.flutter.io/demo");
+      const MethodChannel("flutter_call_java.flutter.io/test.demo");
 
   @override
   Widget build(BuildContext context) {
