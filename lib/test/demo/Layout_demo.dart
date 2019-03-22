@@ -16,6 +16,10 @@ import 'package:flutter/widgets.dart';
 
 class Layout_page extends StatelessWidget {
   @override
+  StatelessElement createElement() {
+    return super.createElement();
+  }
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
         title: "Layout Page",

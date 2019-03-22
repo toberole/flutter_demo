@@ -101,6 +101,11 @@ stl、stf快速的生成widget代码模版
 
 在Flutter中，事件流是“向上”传递的，而状态流是“向下”传递的
 
+### Widget与Element
+
+- Widget实际上就是Element的配置数据，Widget树实际上是一个配置树，而真正的UI渲染树是由Element构成；不过，由于Element是通过Widget生成，所以它们之间有对应关系，所以在大多数场景，我们可以宽泛地认为Widget树就是指UI控件树或UI渲染树。
+
+- 一个Widget对象可以对应多个Element对象。这很好理解，根据同一份配置（Widget），可以创建多个实例（Element）。
 
 
 
