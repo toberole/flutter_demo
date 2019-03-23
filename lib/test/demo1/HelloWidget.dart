@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+/*
+      Widget > RenderObjectWidget > (Leaf/SingleChild/MultiChild)RenderObjectWidget 
+ */
+
 class HelloWidget extends StatelessWidget {
   String txt;
   Color bg_color;
