@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/test/demo1/ConstrainedBoxPage.dart';
-import 'package:flutter_app/test/demo1/DecoratedBoxPage.dart';
-import 'package:flutter_app/test/demo1/TransformPage.dart';
+import 'package:flutter_app/test/demo1/ScaffoldPage.dart';
+import 'package:flutter_app/test/demo1/TabBarPage.dart';
 
 void main() => runApp(new MaterialApp(
-      home: new TransformPage(),
+      home: new TabBarPage(),
     ));
