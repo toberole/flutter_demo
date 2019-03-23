@@ -11,7 +11,7 @@ lib目录
 
 ### 打包
 - debug
-    命令：flutter run debug
+    命令：flutter run --debug
     应用的右上角会显示slow mode字样，支持debug。
 
 - release
