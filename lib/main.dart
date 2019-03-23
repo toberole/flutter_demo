@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/test/demo1/ScaffoldPage.dart';
-import 'package:flutter_app/test/demo1/TabBarPage.dart';
+import 'package:flutter_app/test/demo1/SingleChildScrollViewPage.dart';
 
 void main() => runApp(new MaterialApp(
-      home: new TabBarPage(),
+      home: new SingleChildScrollViewPage(),
     ));
